@@ -1,0 +1,1377 @@
+{
+  "intents": [
+    {
+      "intent": "agradecimiento",
+      "examples": [
+        {
+          "text": "buenisimo"
+        },
+        {
+          "text": "excelente"
+        },
+        {
+          "text": "gracias"
+        },
+        {
+          "text": "graciela"
+        },
+        {
+          "text": "te agradezco"
+        },
+        {
+          "text": "te lo agradezco"
+        },
+        {
+          "text": "thanks"
+        }
+      ],
+      "description": "agradecimiento "
+    },
+    {
+      "intent": "bienvenida",
+      "examples": [
+        {
+          "text": "buenas"
+        },
+        {
+          "text": "buenas noches"
+        },
+        {
+          "text": "buenas tardes"
+        },
+        {
+          "text": "buen dia"
+        },
+        {
+          "text": "buenos dias"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "hi"
+        },
+        {
+          "text": "hola"
+        },
+        {
+          "text": "hola que tal"
+        },
+        {
+          "text": "hola, que tal?"
+        }
+      ],
+      "description": "El estudiante saluda"
+    },
+    {
+      "intent": "curl",
+      "examples": [
+        {
+          "text": "curl"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "elevacion",
+      "examples": [
+        {
+          "text": "elevacion"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "frances",
+      "examples": [
+        {
+          "text": "frances"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "jalon",
+      "examples": [
+        {
+          "text": "jalon"
+        },
+        {
+          "text": "prono"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "ok",
+      "examples": [
+        {
+          "text": "ok"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "opciones1",
+      "examples": [
+        {
+          "text": "1"
+        },
+        {
+          "text": "a"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "opciones2",
+      "examples": [
+        {
+          "text": "2"
+        },
+        {
+          "text": "b"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "opciones3",
+      "examples": [
+        {
+          "text": "3"
+        },
+        {
+          "text": "c"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "opciones4",
+      "examples": [
+        {
+          "text": "4"
+        },
+        {
+          "text": "d"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "opciones5",
+      "examples": [
+        {
+          "text": "5"
+        },
+        {
+          "text": "e"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "opciones6",
+      "examples": [
+        {
+          "text": "6"
+        },
+        {
+          "text": "f"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "regresar",
+      "examples": [
+        {
+          "text": "0"
+        },
+        {
+          "text": "atras"
+        },
+        {
+          "text": "menu"
+        },
+        {
+          "text": "regresar"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "remo",
+      "examples": [
+        {
+          "text": "remo"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "respuesta_del_usuario",
+      "examples": [
+        {
+          "text": "dale"
+        },
+        {
+          "text": "dale espero"
+        },
+        {
+          "text": "esta bien"
+        },
+        {
+          "text": "no hay problema"
+        },
+        {
+          "text": "ok"
+        },
+        {
+          "text": "ok espero"
+        }
+      ],
+      "description": "cuando el usuario responde a la hora de esperar"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "CE",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "033097",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "codigo",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "977394095",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "DNI",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "73456067",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-currency",
+      "values": []
+    },
+    {
+      "entity": "sys-date",
+      "values": []
+    },
+    {
+      "entity": "sys-number",
+      "values": []
+    },
+    {
+      "entity": "sys-percentage",
+      "values": []
+    },
+    {
+      "entity": "sys-time",
+      "values": []
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "webhooks": [
+    {
+      "url": "https://www.youtube.com/watch?v=z95mZVUcJ-E",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "En otras cosas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "El código ingresado no es válido, intenta nuevamente 🙋‍♂️"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1651024490560"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "En otras cosas",
+      "previous_sibling": "node_4_1659502647966",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "calentaminento",
+      "output": {
+        "generic": [
+          {
+            "title": "Excelente! esta es tu rutina de Torso-1, ¿estas listo?",
+            "source": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi0.wp.com%2Fquetescuchen.com%2Fwp-content%2Fuploads%2F2015%2F03%2Fcalentar-1.png%3Fresize%3D800%2C349&f=1&nofb=1",
+            "description": "Comenzamos con un calentamiento de 10 minutos para evitar lesiones 💪",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Escribe *OK* si terminaste el calentamiento para poder continuar..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1659532924895",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1659531926668"
+      },
+      "conditions": "#opciones1",
+      "dialog_node": "node_10_1659532924897"
+    },
+    {
+      "type": "standard",
+      "title": "press banca",
+      "output": {
+        "generic": [
+          {
+            "title": "Ok, empezamos con PRESS BARRA con 4 series de 5 repeticiones",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftumejorfisico.com%2Fwp-content%2Fuploads%2F2015%2F07%2Fpress_de_banca_declinado.png&f=1&nofb=1",
+            "description": "Este es un ejercicio básico pero, muy importante",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Recuerda llegar al fallo muscular para obtener buenos resultados, (si eres nuevo empieza con poco peso y aumenta progresivamente). En este primer ejercicio, descansaras 3 minutos por serie.  \n\nDigita REMO para pasar al siguiente ejercicio...😎"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1659532924895",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_10_1659532924897"
+      },
+      "conditions": "#ok",
+      "dialog_node": "node_11_1659532924897",
+      "previous_sibling": "node_10_1659532924897"
+    },
+    {
+      "type": "folder",
+      "title": "confirmación ",
+      "digress_in": "not_available",
+      "dialog_node": "node_1_1651025419090",
+      "previous_sibling": "node_5_1651024484076"
+    },
+    {
+      "type": "standard",
+      "title": "menu",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Bienvenido Bruno, a tu canal de consultas Fitness, ¿Cómo podemos ayudarte hoy? \n\n1-  RUTINA DE TORSO 1 💪\n2-  RUTINA DE TORSO 2 💪\n3-  RUTINA DE PIERNAS 1 🦵\n4- RUTINA DE PIERNAS 2 🦵\n5- ALIMENTACIÓN 🌮\n6- EJERCICIOS EN CASA 🤾🏻\n\n✅ Escribe el número de tu elección"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1659502647966",
+      "conditions": "#regresar",
+      "dialog_node": "node_1_1659531926668"
+    },
+    {
+      "type": "folder",
+      "title": "opcion 2",
+      "parent": "node_4_1659502647966",
+      "dialog_node": "node_1_1659532897839",
+      "previous_sibling": "node_3_1659528667386"
+    },
+    {
+      "type": "standard",
+      "title": "remo",
+      "output": {
+        "generic": [
+          {
+            "title": "Bien! Ahora continuaremos con REMO EN MAQUINA con 4 series de 8 repeticiones! ",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.LIT9yE_EULDB7peYM-_3OQHaEK%26pid%3DApi&f=1",
+            "description": "A partir de ahora descansarás 2 minutos por cada serie. Empezamos!",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Recuerda mantener la espalda recta en cada ejercicio! 🙂\n\n¿Terminaste? Muy bien! escribe: PRONO para pasar al siguiente reto!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1659532924895",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_11_1659532924897"
+      },
+      "conditions": "#remo",
+      "dialog_node": "node_12_1659532924897",
+      "previous_sibling": "node_11_1659532924897"
+    },
+    {
+      "type": "standard",
+      "title": "jalon",
+      "output": {
+        "generic": [
+          {
+            "title": "Buenísimo! Llegaste a la mitad de rutina! Continuaremos entonces con JALON PRONO! con 4 series de 12 repeticiones",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.sportlife.es%2Fmedia%2Fcache%2Fresolve%2Foriginal%2Fupload%2Fimages%2Fparagrapharticle%2F7180%2Fimagenes%2Fjalon-1.jpg&f=1&nofb=1",
+            "description": "Para este ejercicio es muy importante mantener la espalda recta y un poco inclinada hacia atrás. La barra tiene que dirigirse a pecho. Descansar 2 minutos por serie.",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "¿Terminaste? Muy bien! ahora escribe: ELEVACION para pasar al siguiente nivel 😎"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1659532924895",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_12_1659532924897"
+      },
+      "conditions": "#jalon",
+      "dialog_node": "node_13_1659532924897",
+      "previous_sibling": "node_12_1659532924897"
+    },
+    {
+      "type": "standard",
+      "title": "elevacion lateral ",
+      "output": {
+        "generic": [
+          {
+            "title": "Bien! continuamos con ELEVACIONES LATERALES, en este ejercicio harás 4 series de 12 repeticiones! ¿Estas listo?",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.entrenamientos.com%2Fmedia%2Fcache%2Fexercise_375%2Fuploads%2Fexercise%2Felevacion-lateral-de-hombros-con-mancuernas-2992.png&f=1&nofb=1",
+            "description": "Mantén la espalda recta en todo momento. En este ejercicio trabajaremos los hombros. Descansar 2 minutos por serie.",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Terminaste? excelente, digita: CURL para pasar al siguiente ejercicio..😎"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1659532924895",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_13_1659532924897"
+      },
+      "conditions": "#elevacion",
+      "dialog_node": "node_14_1659532924897",
+      "previous_sibling": "node_13_1659532924897"
+    },
+    {
+      "type": "standard",
+      "title": "curl barra",
+      "output": {
+        "generic": [
+          {
+            "title": "Continuamos con CURL BARRA con 3 series de  8 repeticiones",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.musculaciontotal.com%2Fwp-content%2Fuploads%2F2016%2F01%2Fcurl-de-biceps-con-barra-ez-e1484616324921.jpg&f=1&nofb=1",
+            "description": "trabajaremos los tríceps, mantente recto y recuerda descansar 2 minutos por serie.",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Recuerda llegar al fallo muscular para obtener buenos resultados, y muy importante descansar los dos minutos para relajar los músculos!\n\n¿Terminaste? Excelente, estamos casi por terminar! digita: FRANCES para pasar al ultimo ejercicio de hoy!😎"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1659532924895",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_14_1659532924897"
+      },
+      "conditions": "#curl",
+      "dialog_node": "node_15_1659532924897",
+      "previous_sibling": "node_14_1659532924897"
+    },
+    {
+      "type": "standard",
+      "title": "press francess",
+      "output": {
+        "generic": [
+          {
+            "title": "Llegamos al último ejercicio del día el PRESS FRANCESS!! hagamos entonces 3 series de 8 repeticiones",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Factivopia.com%2Fwp-content%2Fuploads%2F2017%2F09%2Fpotisak_sa_cela.jpg&f=1&nofb=1",
+            "description": "Mantén los brazos firmes (a 90°) solo moverás los antebrazos de abajo hacia arriba. Los codos fijos en una sola dirección, esto ayudara con el equilibrio!",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Culminaste? excelente! Damos por terminado la primera sesión de Torso! Recuerda alimentarte bien (Puedes revisar nuestra guía de alimentación en la ultima opción del menú principal), es muy importante el descanso para reponer y repara tus músculos (de 1 a 2 días) gracias por llegar hasta acá. digita: MENU, para volver al menú principal."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1659532924895",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1659531926668"
+      },
+      "conditions": "#frances",
+      "dialog_node": "node_16_1659532924897",
+      "previous_sibling": "node_15_1659532924897"
+    },
+    {
+      "type": "folder",
+      "title": "opcion 4",
+      "parent": "node_4_1659502647966",
+      "dialog_node": "node_17_1659532941480",
+      "previous_sibling": "node_9_1659532924895"
+    },
+    {
+      "type": "standard",
+      "title": "calentaminento",
+      "output": {
+        "generic": [
+          {
+            "title": "Excelente! esta es tu rutina de Torso-1, ¿estas listo?",
+            "source": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi0.wp.com%2Fquetescuchen.com%2Fwp-content%2Fuploads%2F2015%2F03%2Fcalentar-1.png%3Fresize%3D800%2C349&f=1&nofb=1",
+            "description": "Comenzamos con un calentamiento de 10 minutos para evitar lesiones 💪",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Escribe *OK* si terminaste el calentamiento para poder continuar..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_17_1659532941480",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1659531926668"
+      },
+      "conditions": "#opciones1",
+      "dialog_node": "node_18_1659532941482"
+    },
+    {
+      "type": "standard",
+      "title": "press banca",
+      "output": {
+        "generic": [
+          {
+            "title": "Ok, empezamos con PRESS BARRA con 4 series de 5 repeticiones",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftumejorfisico.com%2Fwp-content%2Fuploads%2F2015%2F07%2Fpress_de_banca_declinado.png&f=1&nofb=1",
+            "description": "Este es un ejercicio básico pero, muy importante",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Recuerda llegar al fallo muscular para obtener buenos resultados, (si eres nuevo empieza con poco peso y aumenta progresivamente). En este primer ejercicio, descansaras 3 minutos por serie.  \n\nDigita REMO para pasar al siguiente ejercicio...😎"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_17_1659532941480",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_18_1659532941482"
+      },
+      "conditions": "#ok",
+      "dialog_node": "node_19_1659532941482",
+      "previous_sibling": "node_18_1659532941482"
+    },
+    {
+      "type": "standard",
+      "title": "remo",
+      "output": {
+        "generic": [
+          {
+            "title": "Bien! Ahora continuaremos con REMO EN MAQUINA con 4 series de 8 repeticiones! ",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.LIT9yE_EULDB7peYM-_3OQHaEK%26pid%3DApi&f=1",
+            "description": "A partir de ahora descansarás 2 minutos por cada serie. Empezamos!",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Recuerda mantener la espalda recta en cada ejercicio! 🙂\n\n¿Terminaste? Muy bien! escribe: PRONO para pasar al siguiente reto!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_17_1659532941480",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_19_1659532941482"
+      },
+      "conditions": "#remo",
+      "dialog_node": "node_20_1659532941482",
+      "previous_sibling": "node_19_1659532941482"
+    },
+    {
+      "type": "standard",
+      "title": "jalon",
+      "output": {
+        "generic": [
+          {
+            "title": "Buenísimo! Llegaste a la mitad de rutina! Continuaremos entonces con JALON PRONO! con 4 series de 12 repeticiones",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.sportlife.es%2Fmedia%2Fcache%2Fresolve%2Foriginal%2Fupload%2Fimages%2Fparagrapharticle%2F7180%2Fimagenes%2Fjalon-1.jpg&f=1&nofb=1",
+            "description": "Para este ejercicio es muy importante mantener la espalda recta y un poco inclinada hacia atrás. La barra tiene que dirigirse a pecho. Descansar 2 minutos por serie.",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "¿Terminaste? Muy bien! ahora escribe: ELEVACION para pasar al siguiente nivel 😎"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_17_1659532941480",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_20_1659532941482"
+      },
+      "conditions": "#jalon",
+      "dialog_node": "node_21_1659532941482",
+      "previous_sibling": "node_20_1659532941482"
+    },
+    {
+      "type": "standard",
+      "title": "calentaminento",
+      "output": {
+        "generic": [
+          {
+            "title": "Excelente! esta es tu rutina de Torso-1, ¿estas listo?",
+            "source": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi0.wp.com%2Fquetescuchen.com%2Fwp-content%2Fuploads%2F2015%2F03%2Fcalentar-1.png%3Fresize%3D800%2C349&f=1&nofb=1",
+            "description": "Comenzamos con un calentamiento de 10 minutos para evitar lesiones 💪",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Escribe *OK* si terminaste el calentamiento para poder continuar..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1659532897839",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1659531926668"
+      },
+      "conditions": "#opciones1",
+      "dialog_node": "node_2_1659532897841"
+    },
+    {
+      "type": "standard",
+      "title": "elevacion lateral ",
+      "output": {
+        "generic": [
+          {
+            "title": "Bien! continuamos con ELEVACIONES LATERALES, en este ejercicio harás 4 series de 12 repeticiones! ¿Estas listo?",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.entrenamientos.com%2Fmedia%2Fcache%2Fexercise_375%2Fuploads%2Fexercise%2Felevacion-lateral-de-hombros-con-mancuernas-2992.png&f=1&nofb=1",
+            "description": "Mantén la espalda recta en todo momento. En este ejercicio trabajaremos los hombros. Descansar 2 minutos por serie.",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Terminaste? excelente, digita: CURL para pasar al siguiente ejercicio..😎"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_17_1659532941480",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_21_1659532941482"
+      },
+      "conditions": "#elevacion",
+      "dialog_node": "node_22_1659532941482",
+      "previous_sibling": "node_21_1659532941482"
+    },
+    {
+      "type": "standard",
+      "title": "curl barra",
+      "output": {
+        "generic": [
+          {
+            "title": "Continuamos con CURL BARRA con 3 series de  8 repeticiones",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.musculaciontotal.com%2Fwp-content%2Fuploads%2F2016%2F01%2Fcurl-de-biceps-con-barra-ez-e1484616324921.jpg&f=1&nofb=1",
+            "description": "trabajaremos los tríceps, mantente recto y recuerda descansar 2 minutos por serie.",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Recuerda llegar al fallo muscular para obtener buenos resultados, y muy importante descansar los dos minutos para relajar los músculos!\n\n¿Terminaste? Excelente, estamos casi por terminar! digita: FRANCES para pasar al ultimo ejercicio de hoy!😎"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_17_1659532941480",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_22_1659532941482"
+      },
+      "conditions": "#curl",
+      "dialog_node": "node_23_1659532941482",
+      "previous_sibling": "node_22_1659532941482"
+    },
+    {
+      "type": "standard",
+      "title": "press francess",
+      "output": {
+        "generic": [
+          {
+            "title": "Llegamos al último ejercicio del día el PRESS FRANCESS!! hagamos entonces 3 series de 8 repeticiones",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Factivopia.com%2Fwp-content%2Fuploads%2F2017%2F09%2Fpotisak_sa_cela.jpg&f=1&nofb=1",
+            "description": "Mantén los brazos firmes (a 90°) solo moverás los antebrazos de abajo hacia arriba. Los codos fijos en una sola dirección, esto ayudara con el equilibrio!",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Culminaste? excelente! Damos por terminado la primera sesión de Torso! Recuerda alimentarte bien (Puedes revisar nuestra guía de alimentación en la ultima opción del menú principal), es muy importante el descanso para reponer y repara tus músculos (de 1 a 2 días) gracias por llegar hasta acá. digita: MENU, para volver al menú principal."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_17_1659532941480",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1659531926668"
+      },
+      "conditions": "#frances",
+      "dialog_node": "node_24_1659532941482",
+      "previous_sibling": "node_23_1659532941482"
+    },
+    {
+      "type": "standard",
+      "title": "calentaminento",
+      "output": {
+        "generic": [
+          {
+            "title": "Excelente! esta es tu rutina de Torso-1, ¿estas listo?",
+            "source": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi0.wp.com%2Fquetescuchen.com%2Fwp-content%2Fuploads%2F2015%2F03%2Fcalentar-1.png%3Fresize%3D800%2C349&f=1&nofb=1",
+            "description": "Comenzamos con un calentamiento de 10 minutos para evitar lesiones 💪",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Escribe *OK* si terminaste el calentamiento para poder continuar..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1659528667386",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1659531926668"
+      },
+      "conditions": "#opciones1",
+      "dialog_node": "node_3_1659502662814"
+    },
+    {
+      "type": "standard",
+      "title": "remo",
+      "output": {
+        "generic": [
+          {
+            "title": "Bien! Ahora continuaremos con REMO EN MAQUINA con 4 series de 8 repeticiones! ",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.LIT9yE_EULDB7peYM-_3OQHaEK%26pid%3DApi&f=1",
+            "description": "A partir de ahora descansarás 2 minutos por cada serie. Empezamos!",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Recuerda mantener la espalda recta en cada ejercicio! 🙂\n\n¿Terminaste? Muy bien! escribe: PRONO para pasar al siguiente reto!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1659528667386",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_4_1659525578668"
+      },
+      "conditions": "#remo",
+      "dialog_node": "node_3_1659528059494",
+      "previous_sibling": "node_4_1659525578668"
+    },
+    {
+      "type": "folder",
+      "title": "opcion 1",
+      "parent": "node_4_1659502647966",
+      "dialog_node": "node_3_1659528667386",
+      "previous_sibling": "node_1_1659531926668"
+    },
+    {
+      "type": "standard",
+      "title": "press banca",
+      "output": {
+        "generic": [
+          {
+            "title": "Ok, empezamos con PRESS BARRA con 4 series de 5 repeticiones",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftumejorfisico.com%2Fwp-content%2Fuploads%2F2015%2F07%2Fpress_de_banca_declinado.png&f=1&nofb=1",
+            "description": "Este es un ejercicio básico pero, muy importante",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Recuerda llegar al fallo muscular para obtener buenos resultados, (si eres nuevo empieza con poco peso y aumenta progresivamente). En este primer ejercicio, descansaras 3 minutos por serie.  \n\nDigita REMO para pasar al siguiente ejercicio...😎"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1659532897839",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_2_1659532897841"
+      },
+      "conditions": "#ok",
+      "dialog_node": "node_3_1659532897841",
+      "previous_sibling": "node_2_1659532897841"
+    },
+    {
+      "type": "folder",
+      "title": "opciones del menu principal ",
+      "dialog_node": "node_4_1659502647966",
+      "previous_sibling": "node_1_1651025419090"
+    },
+    {
+      "type": "standard",
+      "title": "press banca",
+      "output": {
+        "generic": [
+          {
+            "title": "Ok, empezamos con PRESS BARRA con 4 series de 5 repeticiones",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftumejorfisico.com%2Fwp-content%2Fuploads%2F2015%2F07%2Fpress_de_banca_declinado.png&f=1&nofb=1",
+            "description": "Este es un ejercicio básico pero, muy importante",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Recuerda llegar al fallo muscular para obtener buenos resultados, (si eres nuevo empieza con poco peso y aumenta progresivamente). En este primer ejercicio, descansaras 3 minutos por serie.  \n\nDigita REMO para pasar al siguiente ejercicio...😎"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1659528667386",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_3_1659502662814"
+      },
+      "conditions": "#ok",
+      "dialog_node": "node_4_1659525578668",
+      "previous_sibling": "node_3_1659502662814"
+    },
+    {
+      "type": "standard",
+      "title": "jalon",
+      "output": {
+        "generic": [
+          {
+            "title": "Buenísimo! Llegaste a la mitad de rutina! Continuaremos entonces con JALON PRONO! con 4 series de 12 repeticiones",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.sportlife.es%2Fmedia%2Fcache%2Fresolve%2Foriginal%2Fupload%2Fimages%2Fparagrapharticle%2F7180%2Fimagenes%2Fjalon-1.jpg&f=1&nofb=1",
+            "description": "Para este ejercicio es muy importante mantener la espalda recta y un poco inclinada hacia atrás. La barra tiene que dirigirse a pecho. Descansar 2 minutos por serie.",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "¿Terminaste? Muy bien! ahora escribe: ELEVACION para pasar al siguiente nivel 😎"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1659528667386",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_3_1659528059494"
+      },
+      "conditions": "#jalon",
+      "dialog_node": "node_4_1659529054556",
+      "previous_sibling": "node_3_1659528059494"
+    },
+    {
+      "type": "standard",
+      "title": "remo",
+      "output": {
+        "generic": [
+          {
+            "title": "Bien! Ahora continuaremos con REMO EN MAQUINA con 4 series de 8 repeticiones! ",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.LIT9yE_EULDB7peYM-_3OQHaEK%26pid%3DApi&f=1",
+            "description": "A partir de ahora descansarás 2 minutos por cada serie. Empezamos!",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Recuerda mantener la espalda recta en cada ejercicio! 🙂\n\n¿Terminaste? Muy bien! escribe: PRONO para pasar al siguiente reto!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1659532897839",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_3_1659532897841"
+      },
+      "conditions": "#remo",
+      "dialog_node": "node_4_1659532897841",
+      "previous_sibling": "node_3_1659532897841"
+    },
+    {
+      "type": "standard",
+      "conditions": "welcome",
+      "dialog_node": "node_5_1651024484076"
+    },
+    {
+      "type": "standard",
+      "title": "jalon",
+      "output": {
+        "generic": [
+          {
+            "title": "Buenísimo! Llegaste a la mitad de rutina! Continuaremos entonces con JALON PRONO! con 4 series de 12 repeticiones",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.sportlife.es%2Fmedia%2Fcache%2Fresolve%2Foriginal%2Fupload%2Fimages%2Fparagrapharticle%2F7180%2Fimagenes%2Fjalon-1.jpg&f=1&nofb=1",
+            "description": "Para este ejercicio es muy importante mantener la espalda recta y un poco inclinada hacia atrás. La barra tiene que dirigirse a pecho. Descansar 2 minutos por serie.",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "¿Terminaste? Muy bien! ahora escribe: ELEVACION para pasar al siguiente nivel 😎"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1659532897839",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_4_1659532897841"
+      },
+      "conditions": "#jalon",
+      "dialog_node": "node_5_1659532897841",
+      "previous_sibling": "node_4_1659532897841"
+    },
+    {
+      "type": "standard",
+      "title": "saludo ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "👋Bienvenido, soy tu Bot Fitness 🦾. Por favor ingresa tus codigo de registro para poder ayudarte..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1651024484076",
+      "conditions": "#bienvenida",
+      "dialog_node": "node_6_1651024490560"
+    },
+    {
+      "type": "standard",
+      "title": "correcto3",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Bienvenido Bruno, a tu canal de consultas Fitness, ¿Cómo podemos ayudarte hoy? \n\n1-  RUTINA DE TORSO 1 💪\n2-  RUTINA DE TORSO 2 💪\n3-  RUTINA DE PIERNAS 1 🦵\n4- RUTINA DE PIERNAS 2 🦵\n5- ALIMENTACIÓN 🌮\n6- EJERCICIOS EN CASA 🤾🏻\n\n✅ Escribe el número de tu elección"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1651025419090",
+      "conditions": "@codigo:977394095 || @CE || @DNI",
+      "dialog_node": "node_6_1651033859364",
+      "previous_sibling": "node_8_1651025476726"
+    },
+    {
+      "type": "standard",
+      "title": "elevacion lateral ",
+      "output": {
+        "generic": [
+          {
+            "title": "Bien! continuamos con ELEVACIONES LATERALES, en este ejercicio harás 4 series de 12 repeticiones! ¿Estas listo?",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.entrenamientos.com%2Fmedia%2Fcache%2Fexercise_375%2Fuploads%2Fexercise%2Felevacion-lateral-de-hombros-con-mancuernas-2992.png&f=1&nofb=1",
+            "description": "Mantén la espalda recta en todo momento. En este ejercicio trabajaremos los hombros. Descansar 2 minutos por serie.",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Terminaste? excelente, digita: CURL para pasar al siguiente ejercicio..😎"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1659532897839",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_5_1659532897841"
+      },
+      "conditions": "#elevacion",
+      "dialog_node": "node_6_1659532897841",
+      "previous_sibling": "node_5_1659532897841"
+    },
+    {
+      "type": "standard",
+      "title": "elevacion lateral ",
+      "output": {
+        "generic": [
+          {
+            "title": "Bien! continuamos con ELEVACIONES LATERALES, en este ejercicio harás 4 series de 12 repeticiones! ¿Estas listo?",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.entrenamientos.com%2Fmedia%2Fcache%2Fexercise_375%2Fuploads%2Fexercise%2Felevacion-lateral-de-hombros-con-mancuernas-2992.png&f=1&nofb=1",
+            "description": "Mantén la espalda recta en todo momento. En este ejercicio trabajaremos los hombros. Descansar 2 minutos por serie.",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Terminaste? excelente, digita: CURL para pasar al siguiente ejercicio..😎"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1659528667386",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_4_1659529054556"
+      },
+      "conditions": "#elevacion",
+      "dialog_node": "node_7_1659529757767",
+      "previous_sibling": "node_4_1659529054556"
+    },
+    {
+      "type": "standard",
+      "title": "curl barra",
+      "output": {
+        "generic": [
+          {
+            "title": "Continuamos con CURL BARRA con 3 series de  8 repeticiones",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.musculaciontotal.com%2Fwp-content%2Fuploads%2F2016%2F01%2Fcurl-de-biceps-con-barra-ez-e1484616324921.jpg&f=1&nofb=1",
+            "description": "trabajaremos los tríceps, mantente recto y recuerda descansar 2 minutos por serie.",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Recuerda llegar al fallo muscular para obtener buenos resultados, y muy importante descansar los dos minutos para relajar los músculos!\n\n¿Terminaste? Excelente, estamos casi por terminar! digita: FRANCES para pasar al ultimo ejercicio de hoy!😎"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1659528667386",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_7_1659529757767"
+      },
+      "conditions": "#curl",
+      "dialog_node": "node_7_1659530561611",
+      "previous_sibling": "node_7_1659529757767"
+    },
+    {
+      "type": "standard",
+      "title": "curl barra",
+      "output": {
+        "generic": [
+          {
+            "title": "Continuamos con CURL BARRA con 3 series de  8 repeticiones",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.musculaciontotal.com%2Fwp-content%2Fuploads%2F2016%2F01%2Fcurl-de-biceps-con-barra-ez-e1484616324921.jpg&f=1&nofb=1",
+            "description": "trabajaremos los tríceps, mantente recto y recuerda descansar 2 minutos por serie.",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Recuerda llegar al fallo muscular para obtener buenos resultados, y muy importante descansar los dos minutos para relajar los músculos!\n\n¿Terminaste? Excelente, estamos casi por terminar! digita: FRANCES para pasar al ultimo ejercicio de hoy!😎"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1659532897839",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_6_1659532897841"
+      },
+      "conditions": "#curl",
+      "dialog_node": "node_7_1659532897841",
+      "previous_sibling": "node_6_1659532897841"
+    },
+    {
+      "type": "standard",
+      "title": "incorrecto ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "El código ingresado no es válido, intenta nuevamente 🙋‍♂️"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1651025419090",
+      "context": {
+        "codigo": ""
+      },
+      "dialog_node": "node_8_1651025476726"
+    },
+    {
+      "type": "standard",
+      "title": "press francess",
+      "output": {
+        "generic": [
+          {
+            "title": "Llegamos al último ejercicio del día el PRESS FRANCESS!! hagamos entonces 3 series de 8 repeticiones",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Factivopia.com%2Fwp-content%2Fuploads%2F2017%2F09%2Fpotisak_sa_cela.jpg&f=1&nofb=1",
+            "description": "Mantén los brazos firmes (a 90°) solo moverás los antebrazos de abajo hacia arriba. Los codos fijos en una sola dirección, esto ayudara con el equilibrio!",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Culminaste? excelente! Damos por terminado la primera sesión de Torso! Recuerda alimentarte bien (Puedes revisar nuestra guía de alimentación en la ultima opción del menú principal), es muy importante el descanso para reponer y repara tus músculos (de 1 a 2 días) gracias por llegar hasta acá. digita: MENU, para volver al menú principal."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1659532897839",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1659531926668"
+      },
+      "conditions": "#frances",
+      "dialog_node": "node_8_1659532897841",
+      "previous_sibling": "node_7_1659532897841"
+    },
+    {
+      "type": "standard",
+      "title": "press francess",
+      "output": {
+        "generic": [
+          {
+            "title": "Llegamos al último ejercicio del día el PRESS FRANCESS!! hagamos entonces 3 series de 8 repeticiones",
+            "source": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Factivopia.com%2Fwp-content%2Fuploads%2F2017%2F09%2Fpotisak_sa_cela.jpg&f=1&nofb=1",
+            "description": "Mantén los brazos firmes (a 90°) solo moverás los antebrazos de abajo hacia arriba. Los codos fijos en una sola dirección, esto ayudara con el equilibrio!",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Culminaste? excelente! Damos por terminado la primera sesión de Torso! Recuerda alimentarte bien (Puedes revisar nuestra guía de alimentación en la ultima opción del menú principal), es muy importante el descanso para reponer y repara tus músculos (de 1 a 2 días) gracias por llegar hasta acá. digita: MENU, para volver al menú principal."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1659528667386",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1659531926668"
+      },
+      "conditions": "#frances",
+      "dialog_node": "node_9_1659530562908",
+      "previous_sibling": "node_7_1659530561611"
+    },
+    {
+      "type": "folder",
+      "title": "opcion 3",
+      "parent": "node_4_1659502647966",
+      "dialog_node": "node_9_1659532924895",
+      "previous_sibling": "node_1_1659532897839"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Querías decir:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Ninguna de las anteriores"
+    },
+    "human_agent_assist": {
+      "prompt": "Querías decir:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "MyFitnessBot",
+  "language": "es",
+  "description": ""
+}
